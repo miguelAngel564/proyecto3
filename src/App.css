@@ -1,0 +1,96 @@
+img{
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transition: height 1s;
+  box-shadow: 12px 10px 39px 3px;
+  border-radius: 50%;
+}
+img:hover{
+   height: 250px;
+}
+h1{
+   font-size: 50px;
+}
+
+*{
+   background-color: antiquewhite;
+   
+}
+div{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 20px;
+}
+
+ul{
+   display: flex;
+   gap: 5px;
+   flex-direction: column;
+}
+
+.triangle{
+   width: 300px;
+   height: 300px;
+   background: red;
+   position: absolute;
+   transform: rotate(26deg);
+}
+
+.triangle1{
+   width: 250px;
+   height: 250px;
+   background: linear-gradient(to left, #359bcb38, #235da84a);
+   right: 100px;
+   top: 100px;
+   animation: t1 9s ease infinite;
+}
+.triangle2{
+   width: 200px;
+   height: 200px;
+   background: linear-gradient(to left, #d0792d38, #bc2f2f41);
+   animation: t2 9s ease infinite;
+   top: 350px;
+}
+
+@keyframes t1{
+   0%{
+       transform: rotate(25deg) translateY(0px);
+   }
+   50%{
+       transform: rotate(25deg) translateY(20px);
+   }
+   100%{
+       transform: rotate(25deg) translateY(0px);
+   }
+}
+   
+@keyframes t2{
+   0%{
+       transform: rotate(65deg) translateY(0px);
+   }
+   50%{
+       transform: rotate(65deg) translateY(20px);
+   }
+   100%{
+       transform: rotate(65deg) translateY(0px);
+   }
+}
+span{
+   font-size: 32px;
+   color: red;
+   text-transform: uppercase;
+   transition: color 1s;
+   font-weight: bold;
+}
+span:hover{
+   color: rgb(55, 47, 47);
+   
+}
+li{
+   font-size: 25px;
+ 
+}
